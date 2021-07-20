@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Anton Materanski](https://up.htmlacademy.ru/adaptive/23/user/1810811).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Савотиков](https://up.htmlacademy.ru/profession/frontender/11/adaptive/user/98316)
 
 ---
 
