@@ -11,17 +11,17 @@
     <a class="header__logo">
       <img src="img/pink_m.svg" width="74" height="23" alt="логотип приложения пинк">
     </a>
-    <div class="nav">
-      <button class="nav__toggle" type="button">
+    <nav class="navigation">
+      <button class="navigation__toggle" type="button">
         <span>открыть меню</span>
       </button>
-      <ul class="nav__list">
-        <li class="nav__item"><a>главная</a></li>
-        <li class="nav__item"><a href="#"> фотографии</a></li>
-        <li class="nav__item"><a href="#">конкурс</a></li>
-        <li class="nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">html academy</a></li>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a>главная</a></li>
+        <li class="navigation__item"><a href="#"> фотографии</a></li>
+        <li class="navigation__item"><a href="#">конкурс</a></li>
+        <li class="navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">html academy</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
   <main class="main">
     <h1 class="visually-hidden">Pink - мобильное приложение для редактировния снимков</h1>
@@ -29,15 +29,15 @@
       <h2 class="visually-hidden">Скачать приложение</h2>
       <p class="promo__title">Взгляните на жизнь иначе!</p>
       <img class="promo__img" src="#" alt="телефон с установленным приложением">
-      <div class="promo__button download">
-        <a href="#">скачать приложение</a>
-      </div>
+      <div class="download">
+        <a class="download__link" href="#">скачать приложение</a>
       <ul class="download__list">
         <li class="download__item"><a href="https://www.apple.com/ru/app-store/">iPhone</a></li>
         <li class="download__item"><a href="https://play.google.com/store/apps">Android</a></li>
         <li class="download__item"><a href="https://www.microsoft.com/ru-ru">Windows</a></li>
       </ul>
       <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
@@ -96,22 +96,22 @@
     </section>
     <section class="tariff">
       <h2 class="visually-hidden">Тарифы</h2>
-        <table class="tariff__table">
+        <table class="tariff__tables table">
           <tr class="table__heading">
             <th></th>
-            <th class="base">
+            <th class="table__tariffs base">
               <dl class="base_item">
                 <dt class="base__title">база</dt>
                 <dd class="base__tariff">1,99 USD</dd>
               </dl>
             </th>
-            <th class="standart">
+            <th class="table__tariffs standart">
               <dl class="standart_item">
                 <dt class="standart__title">стандарт</dt>
                 <dd class="standart__tariff">3,99 USD</dd>
               </dl>
             </th>
-            <th class="unlimit">
+            <th class="table__tariffs unlimit">
               <dl class="unlimit_item">
                 <dt class="unlimit__title">анлим</dt>
                 <dd class="unlimit__tariff">9,99 USD</dd>
@@ -120,7 +120,7 @@
             </td>
           </tr>
           <tr>
-            <td>розовый фильтр</td>
+            <td>розовый фильтр</td> <!--я не знаю как их обозначить по другому, может их просто удалить?-->>
             <td>+</td>
             <td>+</td>
             <td>+</td>
@@ -153,15 +153,15 @@
       </div>
       <div class="contacts__list">
         <div class="contacts__item">
-          <p>Звоните:</p>
+          <p class="contacts__suggestion">Звоните:</p>
           <a href="tel:+7812555-66-66">+7 (812) 555-66-66</a>
         </div>
         <div class="contacts__item">
-          <p>Пишите:</p>
+          <p class="contacts__suggestion">Пишите:</p>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="contacts__item">
-          <p>Приезжайте в гости:</p>
+          <p class="contacts__suggestion">Приезжайте в гости:</p>
           <address>ул. Большая Конюшенная, 19/8</address>
         </div>
       </div>
@@ -188,7 +188,7 @@
       </ul>
     </div>
     <div class="copyright">
-      <p>разработано</p>
+      <p class="copyright__paternity">разработано</p>
       <a href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/html_academy.svg" width="27" height="34" alt="логотип HTML academy">
       </a>
