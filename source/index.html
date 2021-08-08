@@ -1,12 +1,198 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <title>Пинк</title>
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo">
+      <img src="img/pink_m.svg" width="74" height="23" alt="логотип приложения пинк">
+    </a>
+    <nav class="navigation">
+      <button class="navigation__toggle" type="button">
+        <span>открыть меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a>главная</a></li>
+        <li class="navigation__item"><a href="#"> фотографии</a></li>
+        <li class="navigation__item"><a href="#">конкурс</a></li>
+        <li class="navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">html academy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Pink - мобильное приложение для редактировния снимков</h1>
+    <section class="promo">
+      <h2 class="visually-hidden">Скачать приложение</h2>
+      <p class="promo__title">Взгляните на жизнь иначе!</p>
+      <img class="promo__img" src="#" alt="телефон с установленным приложением">
+      <div class="download">
+        <a class="download__link" href="#">скачать приложение</a>
+      <ul class="download__list">
+        <li class="download__item"><a href="https://www.apple.com/ru/app-store/">iPhone</a></li>
+        <li class="download__item"><a href="https://play.google.com/store/apps">Android</a></li>
+        <li class="download__item"><a href="https://www.microsoft.com/ru-ru">Windows</a></li>
+      </ul>
+      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <div class="advantages__title title">
+        <p class="title__item">Устали от серости мегаполиса?</p>
+        <p class="title__item">Нам есть, что вам предложить!</p>
+      </div>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+            кликов!</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+      </ul>
+      <img src="#" alt="снимок после обработки приложением PINK">
+    </section>
+    <section class="facts">
+      <h2 class="visually-hidden">Факты о приложении</h2>
+      <div class="facts__item fact">
+        <h3 class="fact__title">Эффект на 24 часа!</h3>
+        <p class="fact__text">Британские ученые провели исследования и доказали, что положительный эффект от
+          использования
+          приложения длится целые сутки!</p>
+        <a href="#">Узнать больше об исследовании</a>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <div class="reviews__list">
+        <blockquote class="reviews__item review">
+          <cite class="review__author-name">Николай Петров</cite>
+          <p class="review__author-description">25 лет, водитель трамвая</p>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+            вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <div class="toggles">
+          <button class="toggles__item toggles__item--current" type="button">кнопка1</button>
+          <button class="toggles__item" type="button">кнопка2</button>
+          <button class="toggles__item" type="button">кнопка3</button>
+        </div>
+        <div class="controls">
+          <button class="controls__item" type="button">назад</button>
+          <button class="controls__item" type="button">вперед</button>
+        </div>
+      </div>
+    </section>
+    <section class="tariff">
+      <h2 class="visually-hidden">Тарифы</h2>
+        <table class="table">
+          <tr class="table__heading">
+            <th></th>
+            <th class="table__tariff">
+              <dl class="table__item">
+                <dt class="table__title">база</dt>
+                <dd class="table__price">1,99 USD</dd>
+              </dl>
+            </th>
+            <th class="table__tariff">
+              <dl class="table__item">
+                <dt class="table__title">стандарт</dt>
+                <dd class="table__price">3,99 USD</dd>
+              </dl>
+            </th>
+            <th class="table__tariff">
+              <dl class="table_item">
+                <dt class="table__title">анлим</dt>
+                <dd class="table__price">9,99 USD</dd>
+              </dl>
+            </th>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__functions">розовый фильтр</td>
+            <td class="table__cell table__cell—yes"></td>
+            <td class="table__cell table__cell—yes"></td>
+            <td class="table__cell table__cell—yes"></td>
+          </tr>
+          <tr>
+            <td class="table__functions">смайлики</td>
+            <td class="table__cell table__cell—no"></td>
+            <td class="table__cell table__cell—yes"></td>
+            <td class="table__cell table__cell—yes"></td>
+          </tr>
+          <tr>
+            <td class="table__functions">комментарии</td>
+            <td class="table__cell table__cell—no"></td>
+            <td class="table__cell table__cell—no"></td>
+            <td class="table__cell table__cell—yes"></td>
+          </tr>
+        </table>
+        <div class="toggles">
+          <button class="toggles__item" type="button">кнопка1</button>
+          <button class="toggles__item toggles__item--current" type="button">кнопка2</button>
+          <button class="toggles__item" type="button">кнопка3</button>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__title title">
+        <p class="title__item">Остались вопросы?</p>
+        <p class="title__item">Свяжитесь с нами!</p>
+      </div>
+      <div class="contacts__list">
+        <div class="contacts__item">
+          <p class="contacts__suggestion">Звоните:</p>
+          <a href="tel:+7812555-66-66">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__suggestion">Пишите:</p>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__suggestion">Приезжайте в гости:</p>
+          <address>ул. Большая Конюшенная, 19/8</address>
+        </div>
+      </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779395!2d30.3212883164097!3d59.938797481876186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1627192238095!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="#" class="footer__logo">
+      <img src="img/logo_footer.svg" width="145" height="40" alt="Логотип приложения Pink">
+    </a>
+    <div class="footer__socials">
+      <ul>
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <a href="#">Youtube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p class="copyright__paternity">разработано</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/html_academy.svg" width="27" height="34" alt="логотип HTML academy">
+      </a>
+    </div>
+  </footer>
+</body>
 </html>
