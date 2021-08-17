@@ -34,91 +34,125 @@
   <main class="main">
     <div class="main__app-image">
       <h1 class="main__title">Фотографии пользователей</h1>
+      <p class="main__text">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
     </div>
     <section class="photo">
-      <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?</p>
       <div class="photo__wrapper">
-        <blockquote class="panorama photo__item">
-          <img src="" alt="">
-          <cite>Анна</cite>
+        <img class="photo__picture" src="" alt="">
+        <p class="photo__panorama">панорама дня</p>
+      </div>
+        <blockquote class="photo__item--panorama">
+          <cite class="photo__author">Анна</cite>
           <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
             вопросы!</p>
-          <button class="heart" type="button"><span class="likes-number"></span></button>
+          <div class="likes">
+            <button class="likes__button" type="button"></button>
+            <p class="likes__number">Нравится: 215</p>
+          </div>
         </blockquote>
         <ul class="photo__list">
           <li>
-            <blockquote class="photo__item">
-              <img src="" alt="">
-              <cite>Левон</cite>
-              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <button class="heart" type="button"><span class="likes-number"></span></button>
-            </blockquote>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Левон</cite>
+                <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 356</p>
+                </div>
+              </blockquote>
+            </section>
           </li>
           <li>
-            <blockquote class="photo__item">
-              <img src="" alt="">
-              <cite>Антон</cite>
-              <p class="photo__text">Соседи будут рады!</p>
-              <button class="heart" type="button"><span class="likes-number"></span></button>
-            </blockquote>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Антон</cite>
+                <p class="photo__text">Соседи будут рады!</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 666</p>
+                </div>
+              </blockquote>
+            </section>
           </li>
           <li>
-            <blockquote class="photo__item">
-              <img src="" alt="">
-              <cite>Борис</cite>
-              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <button class="heart" type="button"><span class="likes-number"></span></button>
-            </blockquote>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Борис</cite>
+                <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 215</p>
+                </div>
+              </blockquote>
+            </section>
           </li>
           <li>
-            <blockquote class="photo__item">
-              <img src="" alt="">
-              <cite>Сергей</cite>
-              <p class="photo__text">Самая кубанская в мире!</p>
-              <button class="heart" type="button"><span class="likes-number"></span></button>
-            </blockquote>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Сергей</cite>
+                <p class="photo__text">Самая кубанская в мире!</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 4</p>
+                </div>
+              </blockquote>
+            </section>
           </li>
           <li>
-            <blockquote class="photo__item">
-              <img src="" alt="">
-              <cite>Максим</cite>
-              <p class="photo__text">Где снег-то?</p>
-              <button class="heart" type="button"><span class="likes-number"></span></button>
-            </blockquote>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Максим</cite>
+                <p class="photo__text">Где снег-то?</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 150</p>
+                </div>
+              </blockquote>
+            </section>
           </li>
           <li>
-            <blockquote class="photo__item">
-              <img src="" alt="">
-              <cite>Надежда</cite>
-              <p class="photo__text">Всем GM и взаимные лайки!</p>
-              <button class="heart" type="button"><span class="likes-number"></span></button>
-            </blockquote>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Надежда</cite>
+                <p class="photo__text">Всем GM и взаимные лайки!</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 2560</p>
+                </div>
+              </blockquote>
+            </section>
           </li>
         </ul>
-      </div>
     </section>
     <div class="upload">
       <div class="upload__wrapper">
         <p class="upload__text">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
-        <section class="upload__redactor">
-          <img src="" alt="">
-          <form class="catalog__form slider__list">
-            <fieldset class="scale scale__size slider__item">
-              <label class="visually-hidden" for="size"></label>
-              <input type="range" id="size" name="size" step="1" min="0" max="100">
+        <section class="upload__editor">
+          <img class="upload__picture" src="" alt="">
+          <form class="upload__form">
+            <fieldset class="upload__filter">
+              <label class="visually-hidden" for="crop">crop</label>
+              <input type="range" id="size" name="crop" step="1" min="0" max="100">
             </fieldset>
-            <fieldset class="scale scale__fill slider__item">
-              <label class="visually-hidden" for="fill"></label>
+            <fieldset class="upload__filter">
+              <label class="visually-hidden" for="fill">fill</label>
               <input type="range" id="fill" name="fill" step="1" min="0" max="100">
             </fieldset>
-            <fieldset class="scale scale__contrast slider__item">
-              <label class="visually-hidden" for="contrast"></label>
+            <fieldset class="upload__filter">
+              <label class="visually-hidden" for="contrast">contrast</label>
               <input type="range" id="contrast" name="contrast" step="1" min="0" max="100">
             </fieldset>
-            <div class="upload-button">
-              <button class="upload-button__post" type="submit">Запостить</button>
-              <button class="upload-button__cancel" type="button" disabled>Отмена</button>
+            <div class="upload__button">
+              <button class="upload__button--submit" type="submit">Запостить</button>
+              <button class="upload__button--cancel" type="button" disabled>Отмена</button>
             </div>
           </form>
         </section>
