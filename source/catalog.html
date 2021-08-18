@@ -42,7 +42,7 @@
         <img class="photo__picture" src="" alt="">
         <p class="photo__panorama">панорама дня</p>
       </div>
-        <blockquote class="photo__item--panorama">
+        <blockquote class="photo__item">
           <cite class="photo__author">Анна</cite>
           <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
             вопросы!</p>
@@ -139,20 +139,20 @@
           <img class="upload__picture" src="" alt="">
           <form class="upload__form">
             <fieldset class="upload__filter">
-              <label class="visually-hidden" for="crop">crop</label>
-              <input type="range" id="size" name="crop" step="1" min="0" max="100">
+              <label class="visually-hidden" for="crop">обрезка</label>
+              <input class="upload__parameters" type="range" id="size" name="crop" step="1" min="0" max="100">
             </fieldset>
             <fieldset class="upload__filter">
-              <label class="visually-hidden" for="fill">fill</label>
-              <input type="range" id="fill" name="fill" step="1" min="0" max="100">
+              <label class="visually-hidden" for="fill">заливка</label>
+              <input class="upload__parameters" type="range" id="fill" name="fill" step="1" min="0" max="100">
             </fieldset>
             <fieldset class="upload__filter">
-              <label class="visually-hidden" for="contrast">contrast</label>
-              <input type="range" id="contrast" name="contrast" step="1" min="0" max="100">
+              <label class="visually-hidden" for="contrast">контрастность</label>
+              <input class="upload__parameters" type="range" id="contrast" name="contrast" step="1" min="0" max="100">
             </fieldset>
-            <div class="upload__button">
-              <button class="upload__button--submit" type="submit">Запостить</button>
-              <button class="upload__button--cancel" type="button" disabled>Отмена</button>
+            <div class="upload__buttons">
+              <button class="upload__button upload__button--submit" type="submit">Запостить</button>
+              <button class="upload__button upload__button--cancel" type="button" disabled>Отмена</button>
             </div>
           </form>
         </section>

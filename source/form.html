@@ -38,7 +38,7 @@
         карту!
         Пожалуйста, заполните форму ниже:</p>
       <form class="form" method="GET" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__fieldset--user">
+        <fieldset class="form__fieldset form__fieldset--user">
           <label class="form__text" for="lastname">Фамилия:</label>
           <input class="form__field" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *" required>
           <label class="form__text" for="name">Имя:</label>
@@ -46,45 +46,45 @@
           <label class="form__text" for="surname">Отчество:</label>
           <input class="form__field" type="text" id="surname" name="surname" placeholder="Ну и отчество тоже">
         </fieldset>
-        <fieldset class="form__fieldset--achieve">
-          <legend class="form__text">Ващи безбашенные достижения в путеществии</legend>
+        <fieldset class="form__fieldset form__fieldset--achieve">
+          <legend class="form__text form__text--headline">Ващи безбашенные достижения в путеществии</legend>
           <input class="form__checkbox" type="checkbox" id="cb1" name="" value="selfi" checked>
-          <label class="form__form-text" for="cb1">Сделал селфи с акулой</label>
+          <label class="form__text form__text--list" for="cb1">Сделал селфи с акулой</label>
           <input class="form__checkbox" type="checkbox" id="cb2" name="" value="burned" checked>
-          <label class="form__form-text" for="cb2">Обгорел на пляже</label>
+          <label class="form__text form__text--list" for="cb2">Обгорел на пляже</label>
           <input class="form__checkbox" type="checkbox" id="cb3" name="" value="norris">
-          <label class="form__form-text" for="cb3">Видел Чака Норриса</label>
+          <label class="form__text form__text--list" for="cb3">Видел Чака Норриса</label>
           <input class="form__checkbox" type="checkbox" id="cb4" name="" value="souvenirs">
-          <label class="form__form-text" for="cb4">Накупил сувениров</label>
+          <label class="form__text form__text--list" for="cb4">Накупил сувениров</label>
           <input class="form__checkbox" type="checkbox" id="cb5" name="" value="town" checked>
-          <label class="form__form-text" for="cb5">Удержал башню</label>
+          <label class="form__text form__text--list" for="cb5">Удержал башню</label>
           <input class="form__checkbox" type="checkbox" id="cb6" name="" value="hotel">
-          <label class="form__form-text" for="cb6">Разгромил отель</label>
+          <label class="form__text form__text--list" for="cb6">Разгромил отель</label>
         </fieldset>
-        <fieldset class="form__fieldset--contact">
+        <fieldset class="form__fieldset form__fieldset--contact">
           <legend class="form__text">контактная информация</legend>
           <input class="form__field" type="tel" name="phone-number" id="phone" placeholder="Номер, пожалуйста">
           <label class="form__text" for="phone">Номер телефона</label>
           <input class="form__field" type="email" id="mail" name="mail" placeholder="Введите почту *" required>
           <label class="form__text" for="mail"></label>
         </fieldset>
-        <fieldset class="form__fieldset--os">
-          <legend class="form__os">С каким приложением путешествовали?</legend>
-          <label class="form__form-text" for="r1">Pink для iOS</label>
+        <fieldset class="form__fieldset form__fieldset--os">
+          <legend class="form__text form__text--headline">С каким приложением путешествовали?</legend>
+          <label class="form__text form__text--list" for="r1">Pink для iOS</label>
           <input class="form__radio" type="radio" id="r1" name="oc" value="ios">
-          <label class="form__form-text" for="r2">Pink на Android</label>
+          <label class="form__text form__text--list" for="r2">Pink на Android</label>
           <input class="form__radio" type="radio" id="r2" name="oc" value="android">
-          <label class="form__form-text" for="r3">Windows Phone</label>
+          <label class="form__text form__text--list" for="r3">Windows Phone</label>
           <input class="form__radio" type="radio" id="r3" name="oc" value="windows">
         </fieldset>
-        <fieldset class="form__fieldset--comments">
+        <fieldset class="form__fieldset form__fieldset--comments">
           <legend class="form__text">Опишите свои эмоции</legend>
-          <label for="text">Оставить комментарии</label>
-          <textarea class="form__form-text" name="" id="text" cols="100" rows="5"
+          <label class="visually-hidden" for="text">Оставить комментарии</label>
+          <textarea class="form__text form__text--list" name="" id="text" cols="100" rows="5"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="form__button" type="submit">Отправить форму</button>
-        <p><span>*</span> — обязательные для заполнения поля</p>
+        <p class="form__rules"><span>*</span> — обязательные для заполнения поля</p>
       </form>
     </div>
   </main>
