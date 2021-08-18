@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <title>Пинк</title>
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo">
+      <img src="img/pink_m.svg" width="74" height="23" alt="логотип приложения пинк">
+    </a>
+    <nav class="navigation">
+      <button class="navigation__toggle" type="button">
+        <span>открыть меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html"> фотографии</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">конкурс</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="main__app-image">
+      <h1 class="main__title">Фотографии пользователей</h1>
+      <p class="main__text">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
+    </div>
+    <section class="photo">
+      <div class="photo__wrapper">
+        <img class="photo__picture" src="" alt="">
+        <p class="photo__panorama">панорама дня</p>
+      </div>
+        <blockquote class="photo__item">
+          <cite class="photo__author">Анна</cite>
+          <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
+            вопросы!</p>
+          <div class="likes">
+            <button class="likes__button" type="button"></button>
+            <p class="likes__number">Нравится: 215</p>
+          </div>
+        </blockquote>
+        <ul class="photo__list">
+          <li>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Левон</cite>
+                <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 356</p>
+                </div>
+              </blockquote>
+            </section>
+          </li>
+          <li>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Антон</cite>
+                <p class="photo__text">Соседи будут рады!</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 666</p>
+                </div>
+              </blockquote>
+            </section>
+          </li>
+          <li>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Борис</cite>
+                <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 215</p>
+                </div>
+              </blockquote>
+            </section>
+          </li>
+          <li>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Сергей</cite>
+                <p class="photo__text">Самая кубанская в мире!</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 4</p>
+                </div>
+              </blockquote>
+            </section>
+          </li>
+          <li>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Максим</cite>
+                <p class="photo__text">Где снег-то?</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 150</p>
+                </div>
+              </blockquote>
+            </section>
+          </li>
+          <li>
+            <section class="photo">
+              <blockquote class="photo__item">
+                <img class="photo__picture" src="" alt="">
+                <cite class="photo__author">Надежда</cite>
+                <p class="photo__text">Всем GM и взаимные лайки!</p>
+                <div class="likes">
+                  <button class="likes__button" type="button"></button>
+                  <p class="likes__number">Нравится: 2560</p>
+                </div>
+              </blockquote>
+            </section>
+          </li>
+        </ul>
+    </section>
+    <div class="upload">
+      <div class="upload__wrapper">
+        <p class="upload__text">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
+        <section class="upload__editor">
+          <img class="upload__picture" src="" alt="">
+          <form class="upload__form">
+            <fieldset class="upload__filter">
+              <label class="visually-hidden" for="crop">обрезка</label>
+              <input class="upload__parameters" type="range" id="size" name="crop" step="1" min="0" max="100">
+            </fieldset>
+            <fieldset class="upload__filter">
+              <label class="visually-hidden" for="fill">заливка</label>
+              <input class="upload__parameters" type="range" id="fill" name="fill" step="1" min="0" max="100">
+            </fieldset>
+            <fieldset class="upload__filter">
+              <label class="visually-hidden" for="contrast">контрастность</label>
+              <input class="upload__parameters" type="range" id="contrast" name="contrast" step="1" min="0" max="100">
+            </fieldset>
+            <div class="upload__buttons">
+              <button class="upload__button upload__button--submit" type="submit">Запостить</button>
+              <button class="upload__button upload__button--cancel" type="button" disabled>Отмена</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <a href="#" class="footer__logo">
+      <img src="img/logo_footer.svg" width="145" height="40" alt="Логотип приложения Pink">
+    </a>
+    <div class="footer__socials">
+      <ul>
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <a href="#">Youtube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p class="copyright__paternity">разработано</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/html_academy.svg" width="27" height="34" alt="логотип HTML academy">
+      </a>
+    </div>
+  </footer>
+</body>
