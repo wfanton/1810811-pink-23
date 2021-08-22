@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/opensans.woff");
+  src: url("../fonts/opensans.woff2");
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  color: $dark-blue;
+  font-family: "Open sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
