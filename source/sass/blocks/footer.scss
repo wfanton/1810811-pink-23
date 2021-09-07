@@ -1,0 +1,43 @@
+.footer__wrapper {
+  margin: 0 auto;
+}
+
+.footer__logo {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo svg:hover {
+  fill: $pink;
+}
+
+.footer__logo svg:active {
+  fill: $dark-blue;
+  opacity: 0.3;
+}
+
+.footer__copyright {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  margin: 0;
+  padding: 0;
+  padding-right: 15px;
+}
+
+.copyright__link svg:hover {
+  fill: $dark-blue;
+}
+
+.copyright__link svg:active {
+  fill: rgba(40, 54, 69, 0.3);
+}

@@ -1,10 +1,15 @@
+$tablet-width: 660px;
+
+$desktop-width: 1200px;
+
+
 // colors
-$pink: #d22856;
-$dark-blue: #283645;
-$black: #000000;
-$white: #ffffff;
-$grey: #f2f2f2;
-$checkbox-border: #e5e5e5;
-$green-button: #2aab6d;
-$green-button__hover: #1c9b5e;
-$extra-black: #1d2631;
+$pink: hsl(344, 68%, 49%);
+$dark-blue: hsl(211, 27%, 21%);
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 95%);
+$checkbox-border: hsl(0, 0%, 90%);
+$green-button: hsl(151, 61%, 42%);
+$green-button__hover: hsl(151, 69%, 36%);
+$extra-black: hsl(213, 26%, 15%);

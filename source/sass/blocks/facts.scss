@@ -1,0 +1,60 @@
+.fact__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  margin: 48px 0 24px 0;
+}
+
+.fact__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $dark-blue;
+  margin: 0 0 24px 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.fact__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $pink;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.facts {
+  order: 3;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    height: 429px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 429px;
+    background-color: $grey;
+  }
+}
+
+.facts__img {
+  width: 238px;
+  height: 276px;
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey;
+    margin-left: 50px;
+  }
+}
+
+.sciene-info__block {
+  padding-left: 72px;
+}

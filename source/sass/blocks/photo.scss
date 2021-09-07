@@ -1,0 +1,41 @@
+.photo {
+  background-color: $white;
+  padding-top: 54px;
+}
+
+.photo__item {
+  background-color: $grey;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 280px;
+}
+
+.photo__author {
+    font-weight: bold;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.photo__button {
+  &--heart {
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 25px;
+
+    span {
+      margin-left: 18px;
+      text-transform: uppercase;
+      color: $pink;
+    }
+  }
+
+  &--likes:active {
+    fill: $pink;
+  }
+}
