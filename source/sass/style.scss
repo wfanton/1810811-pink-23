@@ -1,8 +1,15 @@
 //global
 @import "global/variables";
+@import "global/normalize";
 @import "global/global";
+@import "global/helpers";
+@import "global/fonts";
 
 //blocks
+@import "blocks/toggles";
+@import "blocks/controls";
+@import "blocks/wrapper";
+@import "blocks/page";
 @import "blocks/header";
 @import "blocks/navigation";
 @import "blocks/promo";
@@ -15,4 +22,5 @@
 @import "blocks/photo";
 @import "blocks/upload";
 @import "blocks/footer";
+@import "blocks/copyright";
 

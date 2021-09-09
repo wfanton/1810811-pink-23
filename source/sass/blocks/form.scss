@@ -1,12 +1,6 @@
-form {
+.form {
   display: flex;
   flex-direction: column;
-
-  &__header {
-    @media (min-width: $desktop-width) {
-      height: 394px;
-    }
-  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -219,8 +213,8 @@ form {
     font-size: 18px;
     line-height: 30px;
     color: $white;
-    background-color: $green-button;
-    border: 2px solid $green-button;
+    background-color: $green-1;
+    border: 2px solid $green-1;
     border-radius: 1px;
     padding: 13px 44px;
     text-transform: uppercase;
@@ -228,13 +222,13 @@ form {
     order: 6;
 
     &:hover {
-      background: $green-button__hover;
-      border: 2px solid $green-button__hover;
+      background: $green-hover;
+      border: 2px solid $green-hover;
     }
 
     &:active span {
-      background: $green-button__hover;
-      border: 2px solid $green-button__hover;
+      background: $green-hover;
+      border: 2px solid $green-hover;
       opacity: 0.3;
     }
 
@@ -311,73 +305,6 @@ form {
     }
   }
 }
-
-
-.input {
-  &-radio__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 50px;
-  }
-
-  &-radio__item {
-    margin-bottom: 30px;
-  }
-
-  &-checkbox__list {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 55px;
-    padding-left: 22px;
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      width: 936px;
-      flex-wrap: wrap;
-      padding-left: 62px;
-    }
-  }
-
-  &-checkbox__item {
-    margin-bottom: 40px;
-
-    @media (min-width: $desktop-width) {
-      padding-left: 57px;
-      padding-right: 35px;
-      width: 210px;
-    }
-
-    &:nth-child(1) {
-      order: 1;
-    }
-
-    &:nth-child(2) {
-      order: 4;
-    }
-
-    &:nth-child(3) {
-      order: 2;
-    }
-
-    &:nth-child(4) {
-      order: 5;
-    }
-
-    &:nth-child(5) {
-      order: 3;
-    }
-
-    &:nth-child(6) {
-      order: 6;
-    }
-  }
-}
-
 
 .form__filter {
   &--radio + label::before {

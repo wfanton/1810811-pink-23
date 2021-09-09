@@ -1,0 +1,13 @@
+.copyright__text {
+  margin: 0;
+  padding: 0;
+  padding-right: 15px;
+}
+
+.copyright__link :hover {
+  fill: $dark-blue;
+}
+
+.copyright__link :active {
+  fill: rgba(40, 54, 69, 0.3);
+}
