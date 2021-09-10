@@ -19,15 +19,7 @@
   text-align: left;
 }
 
-.page-header__logo svg {
+.header__logo svg {
   width: 74px;
   height: 23px;
-
-  @media (min-width: $tablet-width) {
-    padding: 27px 0 43px 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 44px 0 43px 130px;
-  }
 }

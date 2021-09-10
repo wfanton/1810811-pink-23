@@ -40,53 +40,55 @@
         карту!
         Пожалуйста, заполните форму ниже:</p>
       <form class="form" method="GET" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__fieldset form__fieldset--user">
-          <label class="form__input-label" for="lastname">Фамилия:</label>
-          <input class="form__field" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *" required>
-          <label class="form__input-label" for="name">Имя:</label>
-          <input class="form__field" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
-          <label class="form__input-label" for="surname">Отчество:</label>
-          <input class="form__field" type="text" id="surname" name="surname" placeholder="Ну и отчество тоже">
+        <fieldset class="form__section form__section--user">
+          <label class="form__input-label form__input-label--text" for="lastname">Фамилия:</label><br>
+          <input class="form__input-text" type="text" id="lastname" name="lastname" value="Укажите фамилию *" required>
+          <label class="form__input-label form__input-label--text" for="name">имя:</label><br>
+          <input class="form__input-text" type="text" id="name" name="name" value="Введите ваше имя *" required>
+          <label class="form__input-label form__input-label--text" for="surname">отчество:</label><br>
+          <input class="form__input-text" type="text" id="surname" name="surname" value="Ну и отчество тоже">
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--achieve">
-          <legend class="form__input-label form__input-label--headline">Ващи безбашенные достижения в путеществии</legend>
-          <input class="form__filter form__filter--checkbox" type="checkbox" id="cb1" name="" value="selfi" checked>
-          <label class="form__input-label form__input-label--list" for="cb1">Сделал селфи с акулой</label>
-          <input class="form__filter form__filter--checkbox" type="checkbox" id="cb2" name="" value="burned" checked>
-          <label class="form__input-label form__input-label--list" for="cb2">Обгорел на пляже</label>
-          <input class="form__filter form__filter--checkbox" type="checkbox" id="cb3" name="" value="norris">
-          <label class="form__input-label form__input-label--list" for="cb3">Видел Чака Норриса</label>
-          <input class="form__filter form__filter--checkbox" type="checkbox" id="cb4" name="" value="souvenirs">
-          <label class="form__input-label form__input-label--list" for="cb4">Накупил сувениров</label>
-          <input class="form__filter form__filter--checkbox" type="checkbox" id="cb5" name="" value="town" checked>
-          <label class="form__input-label form__input-label--list" for="cb5">Удержал башню</label>
-          <input class="form__filter form__filter--checkbox" type="checkbox" id="cb6" name="" value="hotel">
-          <label class="form__input-label form__input-label--list" for="cb6">Разгромил отель</label>
+        <fieldset class="form__section form__section--achievements">
+          <legend class="form__legend">Ващи безбашенные достижения в путеществии</legend>
+          <input class="form__input-checkbox visually-hidden" type="checkbox" id="cb1" name="" value="selfi" checked>
+          <label class="form__input-label form__input-label--checkbox" for="cb1">Сделал селфи с акулой</label>
+          <input class="form__input-checkbox visually-hidden" type="checkbox" id="cb2" name="" value="burned" checked>
+          <label class="form__input-label form__input-label--checkbox" for="cb2">Обгорел на пляже</label>
+          <input class="form__input-checkbox visually-hidden" type="checkbox" id="cb3" name="" value="norris">
+          <label class="form__input-label form__input-label--checkbox" for="cb3">Видел Чака Норриса</label>
+          <input class="form__input-checkbox visually-hidden" type="checkbox" id="cb4" name="" value="souvenirs">
+          <label class="form__input-label form__input-label--checkbox" for="cb4">Накупил сувениров</label>
+          <input class="form__input-checkbox visually-hidden" type="checkbox" id="cb5" name="" value="town" checked>
+          <label class="form__input-label form__input-label--checkbox" for="cb5">Удержал башню</label>
+          <input class="form__input-checkbox visually-hidden" type="checkbox" id="cb6" name="" value="hotel">
+          <label class="form__input-label form__input-label--checkbox" for="cb6">Разгромил отель</label>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--contact">
-          <legend class="form__input-label">контактная информация</legend>
-          <input class="form__field" type="tel" name="phone-number" id="phone" placeholder="Номер, пожалуйста">
-          <label class="form__input-label" for="phone">Номер телефона</label>
-          <input class="form__field" type="email" id="mail" name="mail" placeholder="Введите почту *" required>
-          <label class="form__input-label" for="mail"></label>
+        <fieldset class="form__section form__section--contact">
+          <legend class="form__legend form__legend--contacts">контактная информация</legend>
+          <input class="form__input-text form__input-text--contacts" type="tel" name="phone-number" id="phone" placeholder="Номер, пожалуйста">
+          <label class="form__input-label form__input-label--contacts" for="phone">Номер телефона</label>
+          <input class="form__input-text form__input-text--contacts" type="email" id="mail" name="mail" placeholder="Введите почту *" required>
+          <label class="form__input-label form__input-label--contacts" for="mail"></label>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--os">
-          <legend class="form__input-label form__input-label--headline">С каким приложением путешествовали?</legend>
-          <label class="form__input-label form__input-label--list" for="r1">Pink для iOS</label>
-          <input class="form__filter form__filter--radio" type="radio" id="r1" name="oc" value="ios">
-          <label class="form__input-label form__input-label--list" for="r2">Pink на Android</label>
-          <input class="form__filter form__filter--radio" type="radio" id="r2" name="oc" value="android">
-          <label class="form__input-label form__input-label--list" for="r3">Windows Phone</label>
-          <input class="form__filter form__filter--radio" type="radio" id="r3" name="oc" value="windows">
+        <fieldset class="form__section form__section--os">
+          <legend class="form__legend">С каким приложением путешествовали?</legend>
+          <label class="form__input-label form__input-label--radio" for="r1">Pink для iOS</label>
+          <input class="form__input-radio visually-hidden" type="radio" id="r1" name="oc" value="ios">
+          <label class="form__input-label form__input-label--radio" for="r2">Pink на Android</label>
+          <input class="form__input-radio visually-hidden" type="radio" id="r2" name="oc" value="android">
+          <label class="form__input-label form__input-label--radio" for="r3">Windows Phone</label>
+          <input class="form__input-radio visually-hidden" type="radio" id="r3" name="oc" value="windows">
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--comments">
-          <legend class="form__input-label">Опишите свои эмоции</legend>
+        <fieldset class="form__section form__section--comments">
+          <legend class="form__legend">Опишите свои эмоции</legend>
           <label class="visually-hidden" for="text">Оставить комментарии</label>
-          <textarea class="form__input-label form__input-label--list" name="" id="text" cols="100" rows="5"
+          <textarea class="form__input-text form__input-text--textarea" name="review" id="text" cols="100" rows="5"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="form__button" type="submit">Отправить форму</button>
-        <p class="form__rules"><span>*</span> — обязательные для заполнения поля</p>
+        <div class="form__section form__section--button">
+          <button class="form__button" type="submit">Отправить форму</button>
+          <p class="form__rules"><span>*</span> — обязательные для заполнения поля</p>
+        </div>
       </form>
     </div>
   </main>
@@ -116,7 +118,10 @@
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__logo" src="img/html_academy.svg" alt="">
+        <span class="visually-hidden">HTML Academy</span>
+        <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856" />
+        </svg>
       </a>
     </div>
   </footer>

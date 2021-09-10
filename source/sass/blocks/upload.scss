@@ -57,12 +57,12 @@
     }
   }
 
-  .upload__parameters[type=range]::-webkit-slider-runnable-track {
+  .upload__parameters::-webkit-slider-runnable-track {
     height: 1px;
     cursor: pointer;
   }
 
-  .upload__parameters[type=range]::-webkit-slider-thumb {
+  .upload__parameters::-webkit-slider-thumb {
     border: 2px solid $pink;
     height: 14px;
     width: 14px;

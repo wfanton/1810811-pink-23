@@ -8,11 +8,11 @@
   justify-content: center;
 }
 
-.footer__logo :hover {
+.footer__logo:hover {
   fill: $pink;
 }
 
-.footer__logo svg :active {
+.footer__logo:active {
   fill: $dark-blue;
   opacity: 0.3;
 }

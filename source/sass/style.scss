@@ -1,9 +1,12 @@
 //global
-@import "global/variables";
 @import "global/normalize";
-@import "global/global";
-@import "global/helpers";
 @import "global/fonts";
+@import "global/variables";
+@import "global/helpers";
+//mixins
+@import "global/global";
+
+
 
 //blocks
 @import "blocks/toggles";
