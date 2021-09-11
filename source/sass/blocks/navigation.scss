@@ -19,19 +19,6 @@
   }
 }
 
-.navigation__item {
-  padding-left: 21px;
-  padding-bottom: 21px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 147px;
-  }
-}
-
 .navigation__wrapper {
   margin: 0 auto;
   z-index: 5;
@@ -42,6 +29,26 @@
   padding: 0;
   margin: 0;
   text-align: center;
+}
+
+.navigation__list a {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
+  padding: 15px 84px;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: capitalize;
+    padding: 20px 0;
+  }
 }
 
 .navigation__item {
@@ -66,26 +73,6 @@
       left: 0;
       background-color: $white;
     }
-  }
-}
-
-.navigation__list a {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: bold;
-  text-decoration: none;
-  color: $white;
-  text-transform: uppercase;
-  padding: 15px 84px;
-  display: block;
-
-  @media (min-width: $desktop-width) {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: capitalize;
-    padding: 20px 0;
   }
 }
 
@@ -119,6 +106,17 @@
   background-color: transparent;
   z-index: 10;
 
+  &:hover::before {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+  }
+
+  &:active::before {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     top: 45px;
   }
@@ -137,19 +135,6 @@
   height: 3px;
   background-color: $white;
   box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
-}
-
-.navigation__toggle {
-  &:hover::before {
-    background-color: $pink;
-    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
-  }
-
-  &:active::before {
-    background-color: $pink;
-    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
-    opacity: 0.3;
-  }
 }
 
 .navigation--closed .navigation {

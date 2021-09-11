@@ -117,15 +117,6 @@
   }
 }
 
-.promo__title {
-  line-height: 33px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 50px;
-    line-height: 68px;
-  }
-}
-
 .promo__list {
   display: flex;
   flex-wrap: wrap;

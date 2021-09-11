@@ -40,6 +40,9 @@
     bottom: 35px;
   }
 
+
+  /* stylelint-disable */
+
   .upload__parameters {
     height: 2px;
     width: 240px;
@@ -76,6 +79,8 @@
       background-color: $pink;
     }
   }
+
+/* stylelint-enable */
 
   &--size svg {
     width: 44px;
@@ -174,7 +179,6 @@
     @media (min-width: $tablet-width) {
       padding: 16px 94px;
     }
-
 
     &:hover {
       opacity: 0.3;
