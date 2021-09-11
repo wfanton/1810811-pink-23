@@ -1,0 +1,116 @@
+.price-table{
+    border-collapse: collapse;
+}
+
+.price-table__head {
+    position: relative;
+    color: $white;
+    background-color: $dark-blue;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 13px;
+    padding-bottom: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 98px;
+      background-color: #f2f2f2;
+      right: -1px;
+      top: -1px;
+    }
+
+    &--standard {
+      position: relative;
+      color: $white;
+      background-color: $dark-blue;
+      font-size: 18px;
+      line-height: 30px;
+      padding-top: 13px;
+      padding-bottom: 20px;
+    }
+
+    &--standard::before {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 98px;
+      background-color: #f2f2f2;
+      right: -1px;
+      top: -1px;
+    }
+
+    &--standard::after {
+      position: absolute;
+      content: "хит";
+      font-weight: 300;
+      color: $white;
+      text-transform: uppercase;
+      background-color: $pink;
+      width: 102px;
+      height: 24px;
+      top: 16px;
+      left: -23px;
+      transform: rotate(-45deg);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      clip-path: polygon(23% 0%, 77% 0%, 100% 100%, 0% 100%);
+    }
+
+    &--item {
+      margin: 0;
+    }
+
+    &--item-price {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+      margin: 0;
+    }
+}
+
+.price-table__row {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.price-table__cell {
+    position: relative;
+    border: 2px solid $light-grey;
+    text-align: center;
+    background-color: $white;
+    padding: 14px 0;
+    padding-left: 20px;
+    width: 210px;
+    text-transform: capitalize;
+
+    &--main {
+      text-align: left;
+    }
+
+    &--yes::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/yes.svg");
+      background-repeat: no-repeat;
+      width: 31px;
+      height: 21px;
+      top: 16px;
+      left: 44%;
+    }
+
+    &--no::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/no.svg");
+      background-repeat: no-repeat;
+      width: 27px;
+      height: 27px;
+      top: 16px;
+      left: 44%;
+    }
+}
